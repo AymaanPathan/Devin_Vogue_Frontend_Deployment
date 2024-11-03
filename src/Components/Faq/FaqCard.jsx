@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import "./faq.css"; // Import the CSS file
+import "./Faq.css";
 
 const FaqCard = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
