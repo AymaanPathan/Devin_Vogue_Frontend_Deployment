@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import toast from "react-hot-toast";
 import { Productcontext } from "../../Context/Product";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 import "./adminPanel.css";
 
 export default function MainContent() {

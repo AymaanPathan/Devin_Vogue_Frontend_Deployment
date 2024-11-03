@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 // Register the components you need
 ChartJS.register(ArcElement, Tooltip, Legend);

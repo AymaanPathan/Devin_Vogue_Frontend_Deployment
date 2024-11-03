@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import Modal from "./Modal/Modal";
 import UsernameModal from "./Modal/UsernameModal";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 export default function Users() {
   const [users, setUsers] = useState([]);

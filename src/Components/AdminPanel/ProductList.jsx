@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Productcontext } from "../../Context/Product";
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 function ProductList() {
   const { products, deleteProduct } = useContext(Productcontext);

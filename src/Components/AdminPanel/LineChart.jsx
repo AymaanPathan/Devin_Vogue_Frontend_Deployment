@@ -10,7 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 // Register the components you need
 ChartJS.register(
