@@ -1,5 +1,5 @@
 import FaqCard from "./FaqCard";
-import "./faq.css";
+import "./Faq.css";
 
 const items = [
   {
