@@ -41,7 +41,7 @@ export default function MainContent() {
     try {
       toast.loading("checking File...");
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-dppj.vercel.app/upload",
+        " https://devin-vogue-backend-deployment-2.onrender.com/upload",
         {
           method: "POST",
           body: formData,
@@ -275,6 +275,15 @@ export default function MainContent() {
                 Upload
               </button>
             </div>
+            {imageUrl ? (
+              <img
+                src={imageUrl}
+                className="w-12 h-12 object-cover rounded-lg"
+                alt=""
+              />
+            ) : (
+              "please select image & upload"
+            )}
           </div>
 
           <div>

@@ -20,7 +20,7 @@ function UploadForm() {
 
     try {
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-dppj.vercel.app/upload",
+        "https://devin-vogue-backend-deployment-2.onrender.com/upload",
         {
           method: "POST",
           body: formData,
