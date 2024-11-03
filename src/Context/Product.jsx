@@ -23,7 +23,7 @@ const ProductContextProvider = (props) => {
     toast.loading("Fetching Products From Database...");
     try {
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-2.onrender.com/all-products"
+        "https://devin-vogue-server.vercel.app/all-products"
       );
       if (response.ok) {
         toast.dismiss();
@@ -42,7 +42,7 @@ const ProductContextProvider = (props) => {
   const handleCartCount = async () => {
     try {
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-2.onrender.com/userCartCount",
+        "https://devin-vogue-server.vercel.app/userCartCount",
         {
           method: "POST",
           headers: {
@@ -69,7 +69,7 @@ const ProductContextProvider = (props) => {
   const deleteProduct = async (itemId) => {
     try {
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-2.onrender.com/delete-product",
+        "https://devin-vogue-server.vercel.app/delete-product",
         {
           method: "DELETE",
           headers: {
@@ -97,7 +97,7 @@ const ProductContextProvider = (props) => {
     toast.loading("Removing Items...");
     try {
       const response = await fetch(
-        "https://devin-vogue-backend-deployment-2.onrender.com/RemovefromCart",
+        "https://devin-vogue-server.vercel.app/RemovefromCart",
         {
           method: "POST",
           headers: {
@@ -122,7 +122,7 @@ const ProductContextProvider = (props) => {
     if (token) {
       try {
         const response = await fetch(
-          "https://devin-vogue-backend-deployment-2.onrender.com/GetCart",
+          "https://devin-vogue-server.vercel.app/GetCart",
           {
             method: "POST",
             headers: {
@@ -148,7 +148,7 @@ const ProductContextProvider = (props) => {
   const emptyCart = async () => {
     toast.loading("Removing All Items...");
     const response = await fetch(
-      "https://devin-vogue-backend-deployment-2.onrender.com/EmptyCart",
+      "https://devin-vogue-server.vercel.app/EmptyCart",
       {
         method: "POST",
         headers: {

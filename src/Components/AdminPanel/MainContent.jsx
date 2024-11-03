@@ -39,9 +39,9 @@ export default function MainContent() {
     formData.append("productImage", file);
 
     try {
-      toast.loading("checking File...");
+      toast.loading("checkincg File...");
       const response = await fetch(
-        " https://devin-vogue-backend-deployment-2.onrender.com/upload",
+        "https://devin-vogue-server.vercel.app/upload",
         {
           method: "POST",
           body: formData,

@@ -17,7 +17,7 @@ export const WishListContextProvider = (props) => {
   const token = localStorage.getItem("token");
   const fetchWishlist = async () => {
     const response = await fetch(
-      "https://devin-vogue-backend-deployment-2.onrender.com/GetWishlist",
+      "https://devin-vogue-server.vercel.app/GetWishlist",
       {
         method: "GET",
         headers: {
@@ -71,7 +71,7 @@ export const WishListContextProvider = (props) => {
     }
 
     const response = await fetch(
-      "https://devin-vogue-backend-deployment-2.onrender.com/AddWishlist",
+      "https://devin-vogue-server.vercel.app/AddWishlist",
       {
         method: "POST",
         headers: {
@@ -119,7 +119,7 @@ export const WishListContextProvider = (props) => {
   const RemoveWishlist = async (_id) => {
     toast.loading("Please Wait...");
     const response = await fetch(
-      "https://devin-vogue-backend-deployment-2.onrender.com/RemoveWishlist",
+      "https://devin-vogue-server.vercel.app/RemoveWishlist",
       {
         method: "POST",
         headers: {
